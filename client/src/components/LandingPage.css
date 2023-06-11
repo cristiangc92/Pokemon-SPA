@@ -1,0 +1,12 @@
+.contenedorLanding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorLanding img {
+  height: 30%;
+  width: 30%;
+  padding-bottom: 2rem;
+}

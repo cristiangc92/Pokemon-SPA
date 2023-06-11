@@ -1,12 +1,13 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <h1>Pokemon App</h1>
-      </div>
+      <Routes>
+        <Route exact path="/" element={<LandingPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
