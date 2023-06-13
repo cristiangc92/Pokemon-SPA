@@ -8,7 +8,7 @@ export default function Paginado({ pokemonsPerPage, allPokemons, paginado }) {
 
   return (
     <nav className="pb-3" aria-label="Page navigation example">
-      <ul className="pagination justify-content-center mt-5">
+      <ul className="pagination pagination-lg justify-content-center mt-5">
         {pageNumbers?.map((number) => (
           <li className="page-item" key={number}>
             <a

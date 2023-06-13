@@ -96,6 +96,12 @@ function rootReduce(state = initialState, action) {
         pokemons: sortedArrAttack,
       };
 
+    case "GET_NAME_POKEMON":
+      return {
+        ...state,
+        pokemons: action.payload,
+      };
+
     default:
       return state;
   }

@@ -47,3 +47,13 @@ export function orderByAttack(payload) {
     payload,
   };
 }
+
+export function getNamePokemons(name) {
+  return async function (dispatch) {
+    const json = await axios.get("http://localhost:3001/pokemons?name=" + name);
+    return dispatch({
+      type: "GET_NAME_POKEMON",
+      payload: json.data,
+    });
+  };
+}

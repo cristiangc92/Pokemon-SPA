@@ -55,3 +55,58 @@
   align-items: center;
   height: 100%;
 }
+
+.logoContainerFluid {
+  display: none;
+}
+
+.logo2ContainerFluid {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    height: initial;
+    position: relative;
+  }
+  .navbar,
+  .navbar-collapse {
+    flex-direction: initial;
+  }
+  .navbar-nav {
+    width: 100%;
+    height: initial;
+    text-align: initial;
+    justify-content: initial;
+  }
+  .cards-container {
+    margin-top: 2rem;
+  }
+  .logoNavbar {
+    display: none;
+  }
+  .container-fluid {
+    padding: 0.5rem;
+  }
+  .contenedorPrincipal {
+    margin-left: initial; /* Ajusta el margen izquierdo según el ancho de la barra de navegación */
+    width: initial; /* Ajusta el ancho según el espacio disponible */
+  }
+  .nav-item {
+    margin-top: 0.5rem;
+  }
+  .nav-item option {
+    text-align: center;
+  }
+  .logoContainerFluid {
+    display: inherit;
+    height: 10%;
+    width: 10%;
+  }
+  .logo2ContainerFluid {
+    display: inherit;
+    height: 5%;
+    width: 5%;
+  }
+}

@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import Card from "./Card";
 import Paginado from "./Paginado";
+import SearchBar from "./SearchBar";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -69,10 +70,15 @@ export default function Home() {
 
   return (
     <div className="fondoHome">
-      <nav className="navbar navbar-expand-lg bg-danger p-0 position-fixed">
+      <nav className="navbar navbar-expand-lg bg-danger p-0 z-1 position-fixed">
         <div className="container-fluid">
+          <img
+            className="logoContainerFluid"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/4/46/latest/20130917005914/Pok%C3%A9mon_Gotta_catch_em_all_logo.png"
+            alt=""
+          />
           <button
-            className="navbar-toggler"
+            className="navbar-toggler ps-5 pe-5"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -82,6 +88,11 @@ export default function Home() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          <img
+            className="logo2ContainerFluid"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+            alt=""
+          />
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
               <li className="nav-item">
@@ -141,17 +152,7 @@ export default function Home() {
                 </select>
               </li>
               <li className="nav-item">
-                <form className="d-flex flex-column" role="search">
-                  <input
-                    className="form-control mb-1"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button className="btn btn-light" type="submit">
-                    Search
-                  </button>
-                </form>
+                <SearchBar />
               </li>
               <li className="nav-item">
                 <img
