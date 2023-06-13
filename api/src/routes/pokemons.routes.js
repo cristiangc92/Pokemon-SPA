@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
       const pokemonName = pokemonsTotal.filter((p) =>
         p.name.toLowerCase().includes(name.toLowerCase())
       );
-      pokemonName.lenght
+      pokemonName.length
         ? res.status(200).send(pokemonName)
         : res.status(404).send("No se encuentra el pokemon buscado por nombre");
     } else {
