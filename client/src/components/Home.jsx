@@ -97,7 +97,8 @@ export default function Home() {
                   defaultValue="Types"
                   onChange={(e) => handleFilterType(e)}
                 >
-                  <option value="All">Types</option>
+                  <option>Types</option>
+                  <option value="All">All</option>
                   {allTypes.map((t) => (
                     <option key={t} value={t}>
                       {t}
@@ -111,7 +112,7 @@ export default function Home() {
                   defaultValue="Origin"
                   onChange={(e) => handleFilterCreated(e)}
                 >
-                  <option value="All">Origin</option>
+                  <option>Origin</option>
                   <option value="All">All</option>
                   <option value="created">Created</option>
                   <option value="api">Api</option>
