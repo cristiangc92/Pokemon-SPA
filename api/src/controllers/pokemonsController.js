@@ -5,7 +5,7 @@ const getApiInfo = async () => {
   try {
     const arrPokemon = [];
     const pokemonApi = await axios.get(
-      "https://pokeapi.co/api/v2/pokemon?limit=40"
+      "https://pokeapi.co/api/v2/pokemon?limit=96"
     );
     const pokemonUrl = pokemonApi.data.results.map((p) => p.url);
 
