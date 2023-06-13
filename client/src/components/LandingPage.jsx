@@ -11,7 +11,7 @@ export default function LandingPage() {
         alt="Logo pokemon"
       />
       <Link to="/home">
-        <button type="button" class="btn btn-danger btn-lg fw-bold">
+        <button type="button" className="btn btn-danger btn-lg fw-bold">
           INGRESAR
         </button>
       </Link>

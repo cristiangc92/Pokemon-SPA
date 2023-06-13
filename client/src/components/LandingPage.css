@@ -1,4 +1,12 @@
 .contenedorLanding {
+  background-image: url("../assets/DQum78SUMAIqYzS.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: auto;
+  height: 100vh;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +14,13 @@
 }
 
 .contenedorLanding img {
-  height: 30%;
-  width: 30%;
-  padding-bottom: 2rem;
+  height: 10rem;
+  width: auto;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 375px) {
+  .contenedorLanding img {
+    height: 7rem;
+  }
 }

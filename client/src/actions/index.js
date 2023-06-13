@@ -9,3 +9,41 @@ export function getPokemons() {
     });
   };
 }
+
+export function getTypes() {
+  return async function (dispatch) {
+    const json = await axios.get("http://localhost:3001/types");
+    return dispatch({
+      type: "GET_TYPES",
+      payload: json.data,
+    });
+  };
+}
+
+export function filterPokemonsByType(payload) {
+  return {
+    type: "FILTER_BY_TYPE",
+    payload,
+  };
+}
+
+export function filterCreated(payload) {
+  return {
+    type: "FILTER_CREATED",
+    payload,
+  };
+}
+
+export function orderByName(payload) {
+  return {
+    type: "ORDER_BY_NAME",
+    payload,
+  };
+}
+
+export function orderByAttack(payload) {
+  return {
+    type: "ORDER_BY_ATTACK",
+    payload,
+  };
+}
