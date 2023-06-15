@@ -3,7 +3,7 @@ import "./Card.css";
 
 export default function Card({ image, name, types, attack }) {
   return (
-    <div className="card" style={{ maxWidth: "20rem" }}>
+    <div className="card" style={{ maxWidth: "22rem" }}>
       <div className="row g-0 text-center">
         <div className="col-md-5">
           <img
