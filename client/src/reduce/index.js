@@ -102,6 +102,17 @@ function rootReduce(state = initialState, action) {
         pokemons: action.payload,
       };
 
+    case "POST_POKEMON":
+      return {
+        ...state,
+      };
+
+    case "GET_DETAILS":
+      return {
+        ...state,
+        detail: action.payload,
+      };
+
     default:
       return state;
   }

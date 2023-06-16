@@ -57,3 +57,23 @@ export function getNamePokemons(name) {
     });
   };
 }
+
+export function postPokemon(payload) {
+  return async function (dispatch) {
+    const json = await axios.post("http://localhost:3001/pokemons", payload);
+    return dispatch({
+      type: "POST_POKEMON",
+      payload: json,
+    });
+  };
+}
+
+export function getDetail(id) {
+  return async function (dispatch) {
+    const json = await axios.get("http://localhost:3001/pokemons/" + id);
+    return dispatch({
+      type: "GET_DETAILS",
+      payload: json.data,
+    });
+  };
+}

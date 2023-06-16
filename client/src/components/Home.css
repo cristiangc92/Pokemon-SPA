@@ -64,6 +64,10 @@
   display: none;
 }
 
+.buttonCrear {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .navbar {
     width: 100%;
@@ -83,15 +87,12 @@
   .cards-container {
     margin-top: 2rem;
   }
-  .logoNavbar {
-    display: none;
-  }
   .container-fluid {
     padding: 0.5rem;
   }
   .contenedorPrincipal {
-    margin-left: initial; /* Ajusta el margen izquierdo según el ancho de la barra de navegación */
-    width: initial; /* Ajusta el ancho según el espacio disponible */
+    margin-left: 0; /* Ajusta el margen izquierdo según el ancho de la barra de navegación */
+    width: 100%; /* Ajusta el ancho según el espacio disponible */
   }
   .nav-item {
     margin-top: 0.5rem;
@@ -111,6 +112,12 @@
     display: inherit;
     height: 5%;
     width: 5%;
+  }
+  .loadingFlex {
+    flex-direction: none;
+    justify-content: none;
+    align-items: none;
+    height: none;
   }
 }
 

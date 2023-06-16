@@ -96,11 +96,20 @@ export default function Home() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
               <li className="nav-item">
-                <img
-                  className="logoNavbar"
-                  src="https://images.wikidexcdn.net/mwuploads/wikidex/4/46/latest/20130917005914/Pok%C3%A9mon_Gotta_catch_em_all_logo.png"
-                  alt=""
-                />
+                <a href="/home">
+                  <img
+                    className="logoNavbar"
+                    src="https://images.wikidexcdn.net/mwuploads/wikidex/4/46/latest/20130917005914/Pok%C3%A9mon_Gotta_catch_em_all_logo.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li className="nav-item">
+                <Link to={"/pokemons"}>
+                  <button type="button" className="btn btn-light buttonCrear">
+                    Create Pokemon
+                  </button>
+                </Link>
               </li>
               <li className="nav-item">
                 <select

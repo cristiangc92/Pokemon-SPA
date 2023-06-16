@@ -1,0 +1,74 @@
+.fondoCreate {
+  background-image: url("../assets/DQum78SUMAIqYzS.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formCreate {
+  height: auto;
+  width: 75%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.formLogo {
+  height: auto;
+  width: 40%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.imageForm {
+  height: auto;
+  width: 80%;
+}
+
+.botones {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+.list {
+  display: inline-flex;
+}
+
+@media (max-width: 768px) {
+  .formCreate {
+    width: 95%;
+    padding: 0.5rem;
+  }
+  .formLogo {
+    width: 50%;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .fondoCreate {
+    height: inherit;
+  }
+  .formLogo {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .botones {
+    align-items: center;
+    margin-left: 1rem;
+  }
+}
