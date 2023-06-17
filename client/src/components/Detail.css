@@ -73,7 +73,7 @@ span {
 
 @media (max-width: 320px) {
   .fondoDetail {
-    height: 100%;
+    height: inherit;
   }
   .imageDetail {
     height: 15rem;
