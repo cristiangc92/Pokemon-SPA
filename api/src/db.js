@@ -29,7 +29,7 @@ let sequelize =
         ssl: true,
       })
     : new Sequelize(
-        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/pokemons`,
+        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`, //Solo puedo usar 1 base de datos para un deploy gratuito.
         { logging: false, native: false }
       );
 
