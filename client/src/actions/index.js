@@ -77,3 +77,9 @@ export function getDetail(id) {
     });
   };
 }
+
+export function vaciarDetail() {
+  return {
+    type: "VACIAR_DETAIL",
+  };
+}

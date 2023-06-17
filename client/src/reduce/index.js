@@ -113,6 +113,12 @@ function rootReduce(state = initialState, action) {
         detail: action.payload,
       };
 
+    case "VACIAR_DETAIL":
+      return {
+        ...state,
+        detail: [],
+      };
+
     default:
       return state;
   }

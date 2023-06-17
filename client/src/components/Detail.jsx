@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getDetail } from "../actions";
+import { getDetail, vaciarDetail } from "../actions";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Detail.css";
@@ -11,6 +11,9 @@ export default function Detail(props) {
 
   useEffect(() => {
     dispatch(getDetail(id));
+    return function () {
+      dispatch(vaciarDetail());
+    };
   }, [dispatch, id]);
 
   const myPokemon = useSelector((state) => state.detail);
