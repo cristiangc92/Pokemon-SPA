@@ -64,7 +64,7 @@ router.get("/:id", async (req, res) => {
         types: pokemonDb.types,
         createdInDb: pokemonDb.createdInDb,
       };
-      videogameIdDb
+      pokemonIdDb
         ? res.status(200).send(pokemonIdDb)
         : res.status(404).send("No existe el ID en la BD!!");
     }
