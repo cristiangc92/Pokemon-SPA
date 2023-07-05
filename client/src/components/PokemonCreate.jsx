@@ -102,7 +102,7 @@ export default function PokemonCreate() {
     } else {
       console.log("AQUI: ", input);
       dispatch(postPokemon(input));
-      alert("Videojuego creado con exito!!");
+      alert("Pokemon creado con exito!!");
       setInput({
         name: "",
         image: "",
